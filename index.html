@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HDP | HomePage</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="body--100vh">
+            <header>
+                <div class="container">
+                    <div class="header">
+                        <a href="index.html"><img class="header__img" src="img/float-burger3.jpg" alt="Hamburguesas Diversas y Personalizadas"></a>
+                        
+                        <nav class="header__nav">
+                            <ul class="nav__ul">
+                                <li class="nav__li"><a href="#creaciones">Creaciones</a></li>
+                                <li class="nav__li"><a href="#contacto">Contacto</a></li>
+                                <li class="nav__li"><a href="carrito.html">(<span class="li__contador"></span>)<i class="fas fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            
+            <main>
+                <div class="container">
+                    <div class="title">
+                        <div class="title__text">
+                            <h1><span class="title__hdp--color">H</span>amburguesas <span class="title__hdp--color">D</span>iversas y <span class="title__hdp--color">P</span>ersonalizadas</h1>
+                            <p class="title__button"><a href="#crear">Quiero mi <span class="title__hdp--color">HDP </span><i class="fas fa-angle-double-right"></i></a></p>
+                        </div>
+                        <div class="title__img">
+                            <img src="img/float-burger.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <div id="crear" class="body2--100vh">
+            <div class="container">
+                <div class="crear">
+                    <button id="addToCart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="creaciones" class="body3--100vh">
+            <div class="container">
+                <div class="creaciones">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="contacto" class="body4--100vh">
+            <div class="container">
+                <div class="contacto">
+                    <div class="contacto__title">
+                        <h2>Contacto</h2>
+                    </div>
+                    
+                    <div class="contacto__formulario">
+                        <div class="formulario__form">
+                            <form action="">
+                                <div>
+                                    <label>Nombre <span class="required--rojo">(requerido)</span></label>
+                                    <input type="text" name="nombre" required>
+                                </div>
+                                <div>
+                                    <label>Email <span class="required--rojo">*</span></label>
+                                    <input type="email" name="email" required>
+                                </div>
+                                <div>
+                                    <label>Celular</label>
+                                    <input type="tel" name="celular">
+                                </div>
+                                <div>
+                                    <label>Asunto <span class="required--rojo">*</span></label>
+                                    <input type="text" name="asunto" required>
+                                </div>
+                                <div class="formulario__block">
+                                    <label>Mensaje <span class="required--rojo">*</span></label> 
+                                    <textarea name="message" rows="3" required></textarea>
+                                </div>
+                                <div class="formulario__block">
+                                    <button>Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://kit.fontawesome.com/bf9ab30dbe.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+    </html>

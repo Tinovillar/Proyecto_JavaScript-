@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1300px;
+}
+
+/* BACKGROUND COLORS */
+
+.body--100vh {
+    height: 100vh;
+    background-color: #6B8790;
+}
+
+.body2--100vh {
+    height: 100vh;
+    background-color: #E19494;
+}
+
+.body3--100vh {
+    height: 100vh;
+    background-color: #F9C48C;
+}
+
+.body4--100vh {
+    height: 100vh;
+    background-color: #AFBBE3;
+}
+
+.body5--100vh {
+    height: 100vh;
+    background-color: #7E93C8;
+}
+
+/* NAV MENU */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.8em 0;
+    font-size: 1.2em;
+}
+
+.header__nav {
+    width: 30%;
+}
+
+.header__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav__ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__li {
+    border-bottom: 0.01em solid white;
+}
+
+.li--carrito-fixed {
+    position: fixed;
+    top: 3em;
+    right: 3em;
+    font-size: 1.5em;
+}
+
+/* INDEX.HTML BODY 1 */
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5em auto;
+    width: 90%;
+}
+
+.title__img img {
+    border-radius: 2%;
+}
+
+.title__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 2em;
+}
+
+.title__text h1 {
+    width: 50%;
+}
+
+.title__hdp--color {
+    color: black;
+}
+
+.title__button {
+    margin-top: 2em;
+    align-items: center;
+}
+
+.title__button a {
+    padding: 0.3em;
+    background-color: #E19494;
+}
+
+/* INDEX.HTML BODY 2 */
+
+.crear button {
+    font-size: 3em;
+    margin: 50vh 50vh;
+}
+
+/* CARRITO.HTML TITLE */
+
+.carrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito__titles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7em;
+    border-bottom: 0.01em solid #ffffff;
+    margin: 2em 0;
+}
+
+.carrito__pedidos {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.carrito__buy {
+    text-align: center;
+    width: 100%;
+    margin: 1em 0 2em;
+    background-color: #FFFFFF;
+    font-size: 2em;
+    padding: 0.2em;
+}
+
+.carrito__buy a {
+    color: #7E93C8;
+}
+
+.carrito__vaciar {
+    text-align: end;
+    width: 100%;
+    margin: 2em 0 0 0;
+    font-size: 1.5em;
+}
+
+.pedidos__pedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    border: 0.15em solid #fff;
+    padding: 0.3em;
+    margin: 0.5em 2em 0.5em;
+}
+
+.pedido__descripcion {
+    margin: 0.7em 0;
+}
+
+.pedido__title {
+    font-size: 1.5em;
+}
+
+#cantidad {
+    color: black;
+    width: 15%;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* FORMULARIO CONTACTO */
+
+.contacto__formulario {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    margin-top: 3em;
+}
+
+.contacto__formulario > * {
+    padding: 1em;
+}
+
+.contacto__formulario .formulario__form {
+    background: #E19494;
+}
+
+.contacto__formulario .formulario__form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto__formulario .formulario__form form label {
+    display: block;
+    color: #FFFFFF;
+}
+
+.contacto__formulario .formulario__form form label .required--rojo {
+    color: black;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.contacto__formulario .formulario__form form div {
+    margin: 0;
+    padding: 1em;
+}
+
+.contacto__formulario .formulario__form form .formulario__block {
+    grid-column: 1/3;
+}
+
+.contacto__formulario .formulario__form form textarea, .contacto__formulario .formulario__form form input, .contacto__formulario .formulario__form form button {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid black;
+}
+
+.contacto__formulario .formulario__form form textarea, .contacto__formulario .formulario__form form input, .contacto__formulario .formulario__form form button {
+    max-width: 100%;
+}
+
+.contacto__formulario .formulario__form form button {
+    background: black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+.contacto__formulario .formulario__form form button:hover {
+    background: #fff;
+    color: black;
+    outline: 0;
+}
+
+.contacto__title {
+    font-size: 2em;
+    text-align: center;
+    padding: 2.5em;
+}
+
+@media (min-width: 768px) {
+    .contacto__formulario > * {
+        padding: 2em;
+    }
+}
