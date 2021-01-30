@@ -1,10 +1,8 @@
-//Hola, tengo un problema con el boton de la pagina index.html, con el de agregar al carrito. Se me borra cuando cambio de pagina. Como lo puedo arreglar??
-
 let li__contador = document.getElementsByClassName("li__contador");
 let btnAddToCart = document.getElementById("addToCart");
 let divCrear = document.getElementsByClassName("crear");
 let carrito = [];
-let carrito__pedidos = document.getElementsByClassName("carrito__pedidos")
+let carrito__pedidos = document.getElementsByClassName("carrito__pedidos");
 let burger = {
   "nombre" : "Valentino amburguesa sin H",
   "ingredientes" : "uno, dos, tresssss",
@@ -47,9 +45,5 @@ function vaciarCarrito(){
   localStorage.setItem("carrito", JSON.stringify.carrito);
   actualizarCarrito();
 }
-
-addToCart();
-addToCart();
-addToCart();
 
 window.addEventListener("DOMContentLoaded", actualizarCarrito);

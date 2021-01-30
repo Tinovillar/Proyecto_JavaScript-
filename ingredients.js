@@ -1,4 +1,4 @@
-[{
+const ingredients = [{
     "id" : "01" ,
     "ingredient" : "lechuga" ,
     "vegano" : "true" ,
@@ -87,5 +87,4 @@
     "ingredient" : "" ,
     "vegano" : "false" ,
     "vegetariano" : "true"
-}
-]
+}]
